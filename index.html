@@ -179,6 +179,8 @@ footer img{height:20px;opacity:.7}
 @media (max-width:980px){.quick{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:760px){.feature{grid-template-columns:1fr}.feature-visual{max-width:220px;margin:0 auto}.specs{grid-template-columns:1fr}}
 @media (max-width:520px){.quick{grid-template-columns:1fr}}
+.script{margin:4px 0 0;font-size:15.5px;line-height:1.55;font-weight:500;color:var(--off);font-style:italic}
+.list .msg{margin-top:18px}
 </style>
 </head>
 <body>
@@ -230,7 +232,7 @@ footer img{height:20px;opacity:.7}
       </ul>
       <div class="msg">
         <b data-i="v_msg_t"></b>
-        <ol><li data-i="v_m1"></li><li data-i="v_m2"></li><li data-i="v_m3"></li></ol>
+        <blockquote class="script">"Great to be here in Washington, D.C., at [Event Name]! We're meeting entrepreneurs, exchanging ideas about business growth, and sharing how Glofy helps companies scale with highly skilled talent from Latin America."</blockquote>
         <p data-i="v_msg_note"></p>
       </div>
     </div>
@@ -255,7 +257,7 @@ footer img{height:20px;opacity:.7}
 <section id="optional"><div class="wrap">
   <div class="sec-head"><div class="num">03</div><div><h2 data-i="o_t"></h2><p data-i="o_d"></p></div></div>
   <div class="cols">
-    <div class="list y"><h3 data-i="o1_t"></h3><div class="mini" data-i="o1_spec"></div><ul><li data-i="o1_1"></li><li data-i="o1_2"></li><li data-i="o1_3"></li></ul></div>
+    <div class="list y"><h3 data-i="o1_t"></h3><div class="mini" data-i="o1_spec"></div><ul><li data-i="o1_1"></li><li data-i="o1_3"></li></ul><div class="msg"><b data-i="o1_script_t"></b><blockquote class="script">"One of the interesting takeaways from today's event in Washington is how important entrepreneurship and innovation are for business growth. At Glofy, we're always looking at how companies can scale faster by connecting with the right talent."</blockquote><p data-i="o1_note"></p></div></div>
     <div class="list y"><h3 data-i="o2_t"></h3><div class="mini" data-i="o2_spec"></div><ul><li data-i="o2_1"></li><li data-i="o2_2"></li><li data-i="o2_3"></li><li data-i="o2_4"></li></ul></div>
   </div>
 </div></section>
@@ -324,11 +326,11 @@ v2:"Eye contact with the camera and a natural delivery.",
 v3:"Clear voice and minimal background noise.",
 v4:"Ideally recorded by another person, with the camera steady.",
 v5:"Two to three takes, so we can select the strongest one.",
-v_msg_t:"Message structure",
+v_msg_t:"Main script",
 v_m1:"Where you are: the city and the name of the event.",
 v_m2:"What you are doing: meeting people, exchanging ideas.",
 v_m3:"How Glofy helps companies scale with highly skilled talent from Latin America.",
-v_msg_note:"The Comms team shares a suggested script for each event. Delivery can be adapted to sound natural: the message matters more than exact wording.",
+v_msg_note:"Feel free to adapt the delivery slightly to make it sound natural. The important thing is to communicate the message rather than memorize every word.",
 ph_t:"Event photography",ph_d:"Photos that show the atmosphere, the people and the conversations throughout the event.",
 g1_t:"Event and venue",g1_c:"7–10 photos",
 g1_1:"Main entrance or sign with the event name.",g1_2:"Wide shot of the auditorium with attendees.",g1_3:"Stage with a speaker presenting.",g1_4:"Networking areas or relevant stands.",
@@ -339,7 +341,7 @@ g3_1:"Merchandise or branded materials: badges, notebooks, welcome kits.",g3_2:"
 names_t:"Names and context",names_d:"For photos with other people, sharing their names, companies and roles allows us to mention or tag them correctly.",
 o_t:"Optional content",o_d:"Additional material that adds value when time allows.",
 o1_t:"Key takeaway video",o1_spec:"10–15 seconds · quiet area · event branding visible",
-o1_1:"One relevant observation or takeaway from the event.",o1_2:"A personal perspective is preferred over a suggested script.",o1_3:"Recorded in a quieter area, with branding in the background.",
+o1_1:"One relevant observation or takeaway from the event.",o1_script_t:"Suggested script",o1_note:"This is just an example. If something particularly interesting comes up during the event, we'd love for you to share your own perspective instead.",o1_2:"A personal perspective is preferred over a suggested script.",o1_3:"Recorded in a quieter area, with branding in the background.",
 o2_t:"Atmosphere clips",o2_spec:"2–3 clips · 5–8 seconds each · no speaking",
 o2_1:"Panoramic shot of the auditorium or main stage.",o2_2:"People networking or walking through the event.",o2_3:"A speaker presenting or a notable moment in a session.",o2_4:"Entrance, signage or branded areas.",
 s_t:"Quick standards",s_d:"Four visual references for the most common situations.",
@@ -376,11 +378,11 @@ v2:"Mirada a cámara y un tono natural.",
 v3:"Voz clara y el menor ruido de fondo posible.",
 v4:"Idealmente grabado por otra persona, con la cámara estable.",
 v5:"Dos o tres tomas, para que podamos elegir la mejor.",
-v_msg_t:"Estructura del mensaje",
+v_msg_t:"Guion principal",
 v_m1:"Dónde estás: la ciudad y el nombre del evento.",
 v_m2:"Qué estás haciendo: conocer personas, intercambiar ideas.",
 v_m3:"Cómo Glofy ayuda a las empresas a escalar con talento altamente calificado de Latinoamérica.",
-v_msg_note:"El equipo de Comms comparte un guion sugerido para cada evento. La forma de decirlo puede adaptarse para que suene natural: importa más el mensaje que las palabras exactas.",
+v_msg_note:"El guion se graba en inglés. La forma de decirlo puede adaptarse levemente para que suene natural: lo importante es transmitir el mensaje, no memorizar cada palabra.",
 ph_t:"Fotografía del evento",ph_d:"Fotos que muestren el clima, las personas y las conversaciones a lo largo del evento.",
 g1_t:"Evento y lugar",g1_c:"7–10 fotos",
 g1_1:"Entrada principal o cartel con el nombre del evento.",g1_2:"Plano general del auditorio con asistentes.",g1_3:"Escenario con un orador presentando.",g1_4:"Áreas de networking o stands destacados.",
@@ -391,7 +393,7 @@ g3_1:"Merchandising o materiales de marca: credenciales, cuadernos, kits de bien
 names_t:"Nombres y contexto",names_d:"En las fotos con otras personas, compartir sus nombres, empresas y roles nos permite mencionarlas o etiquetarlas correctamente.",
 o_t:"Contenido opcional",o_d:"Material adicional que suma valor si el tiempo lo permite.",
 o1_t:"Video de aprendizaje clave",o1_spec:"10–15 segundos · espacio tranquilo · branding del evento visible",
-o1_1:"Una observación o aprendizaje relevante del evento.",o1_2:"Se prioriza una mirada propia por sobre el guion sugerido.",o1_3:"Grabado en un espacio más tranquilo, con branding de fondo.",
+o1_1:"Una observación o aprendizaje relevante del evento.",o1_script_t:"Guion sugerido",o1_note:"Es solo un ejemplo, también en inglés. Si durante el evento surge algo particularmente interesante, nos encantaría que compartas tu propia mirada.",o1_2:"Se prioriza una mirada propia por sobre el guion sugerido.",o1_3:"Grabado en un espacio más tranquilo, con branding de fondo.",
 o2_t:"Clips de ambiente",o2_spec:"2–3 clips · 5–8 segundos cada uno · sin hablar",
 o2_1:"Plano panorámico del auditorio o el escenario principal.",o2_2:"Personas haciendo networking o recorriendo el evento.",o2_3:"Un orador presentando o un momento destacado de una sesión.",o2_4:"Entrada, cartelería o espacios con branding.",
 s_t:"Estándares rápidos",s_d:"Cuatro referencias visuales para las situaciones más frecuentes.",
